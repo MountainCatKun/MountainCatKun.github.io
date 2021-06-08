@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+/* 字體1 */
+
+/*取消底綫*/
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+
+a:visited {color: black;}
+/*選擇條上移*/
+.wrapper{
+    margin-top: -100px;
+}
+/*背景*/
+html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(-35deg, #a85eee65 40%, #78ffe9 60%)
+}
+/*按鍵*/
+.wrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 7px;
+    overflow: hidden;/*隱藏文字*/
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(54, 18, 18, 0.3);
+    transition: all 0.4s ease-out;/*動畫延遲*/
+}
+/*按鍵内容*/
+.wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: content-box;
+    line-height: 60px;
+}
+/*icon大小*/
+.wrapper .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.4s ease-out;
+}
+
+.wrapper .button:hover i{
+    color: #fff;
+}
+/*游標在按鍵上展開*/
+.wrapper .button:hover{
+    width: 170px;
+}
+/*文字大小*/
+.wrapper .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.4s ease-out;
+}
+/*菜單顔色*/
+.wrapper .button:nth-child(1):hover .icon{
+    background: #1DA1F2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+    background: #333;
+}
+.wrapper .button:nth-child(3):hover .icon{
+    background: #FD4C51;
+}
+.wrapper .button:nth-child(4):hover .icon{
+    background: #525EEF;
+}
+.wrapper .button:nth-child(5):hover .icon{
+    background: #a751c9;
+}
+.wrapper .button:nth-child(6):hover .icon{
+    background: #a8a8a8;
+}
+/*文字顔色*/
+.wrapper .button:nth-child(1):hover a{
+    color: #1DA1F2;
+}
+.wrapper .button:nth-child(2):hover a{
+    color: #333;
+}
+.wrapper .button:nth-child(3):hover a{
+    color: #FD4C51;
+}
+.wrapper .button:nth-child(4):hover a{
+    color: #525EEF;
+}
+.wrapper .button:nth-child(5):hover a{
+    color: #a751c9;
+}
+.wrapper .button:nth-child(6):hover a{
+    color: #a8a8a8;
+}
+
+
+/*
+ 參考影片
+    https://www.youtube.com/watch?v=yU3giDe-N6c
+*/
